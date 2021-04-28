@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
+    <style>
+        .tagsbox{
+            margin: 30px auto;
+            width: 80%;
+            height: 50vh;
+            animation: fadeInDown 1.5s;
+        }
+        .title{
+            font-size: 20px;
+            line-height: 2;
+        }
+        .p-10{
+            padding: 30px;
+        }
+        .noteCat{
+            list-style:circle;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        .noteCat li a{
+            color: #000000;
+            opacity: .5;
+        }
+        .noteCat li a:hover{
+            opacity: 1;
+        }
+        .noteCat span{
+            color: #ccc;            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="#" class="progression"><span></span></a>
+        <header class="header">
+            <div class="top-header">
+                <div class="topheader-content-width-control">
+                    <h1 class="logo"><img src="./img/pinterest_board_photo.png" alt="">front end</h1>
+                    <ul class="menu-desktop">
+                        <li><a href="./index.html">首頁</a></li>
+                        <!-- <li><a href="./about.html">關於我</a></li> -->
+                        <li><a href="./notecat.html">文章分類</a></li>
+                        <li><a href="./projectList.html">作品集</a></li>
+                        <li><a href="./history.html">歷史紀錄</a></li>
+                    </ul>
+                    <div class="menuicon active mobile" id="menuicon">
+                        <div id="bar1" class="bar1"></div>
+                        <div id="bar2" class="bar2"></div>
+                        <div id="bar3" class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="./index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <!-- <li><a href="./about.html"><i class="fas fa-user"></i> 關於我</a></li> -->
+                <li><a href="./notecat.html"><i class="fas fa-project-diagram"></i> 文章分類</a></li>
+                <li><a href="./projectList.html"><i class="fas fa-briefcase"></i> 作品集</a></li>
+                <li><a href="./history.html"><i class="fas fa-pen"></i> 歷史紀錄</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <aside class="tagsbox">
+                <p class="title">分類列表</p>
+                <div class="p-10">
+                    <ul class="noteCat">
+                        <li><a href="">HTML</a>  <span>(30)<span></li>
+                        <li><a href="">CSS</a>  <span>(2)<span></span></li>
+                        <li><a href="">JavaScript</a>  <span>(4)<span></span></li>
+                        <li><a href="">Webpack</a>  <span>(5)<span></span></li>
+                        <li><a href="">Gulp</a>  <span>(6)<span></span></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <span>&copy; 2020&nbsp;&nbsp;<i class="fas fa-user">&nbsp;&nbsp;Made by alicepai</i></span>            
+        </footer>
+    </div>
+    <script src="./js/all.js"></script>
+</body>
+</html>

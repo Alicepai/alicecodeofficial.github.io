@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
+    <style>
+        .cardList{
+            width: 95%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            animation: fadeInDown 1.5s;
+        }
+        .card{
+            box-sizing: border-box;
+            width: 32.3333%;
+            height: 300px;
+            overflow: hidden;
+            margin-right: 3px;
+            border-radius: 5px;
+            perspective: 1000px;
+            transition: .5s;
+        }
+        .card-wrapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+        .front,.back{
+            position: absolute;
+            backface-visibility:hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .text-wrapper{
+            padding: 15px;
+        }
+        .card-title{
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 270px;
+        }
+        .card-content p{
+            margin-top: 10px;
+            line-height: 1.2;
+            padding: 5px;
+        }
+        .card-content .readbtn{
+            color:#ffffff;
+            border-color: #fff;
+            transition: .2s;
+        }
+        .back{
+            transform: rotateY(180deg);
+            background-color: #818181;
+            color: #ffffff;
+
+        }
+        .top-img{
+            width: 100%;
+            height: 100%;
+        }
+        .top-img img{
+            width: 190%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card:hover .card-wrapper{
+            transform: rotateY(180deg);
+        }
+        .mobile{
+            display: none;
+        }
+
+        @media (max-width:555px){
+            .main{
+                height: 200vh;
+            }
+            .card{
+                width: 100%;
+                margin-bottom: 30px;
+                position: relative;
+            }
+            .top-img{
+                width: 250px;
+                height: 100%;
+            }
+            .card:hover .card-wrapper{
+                transform: rotate(0);
+            }
+            .mobile{
+                display: block;
+            }
+            .mask{
+            position: absolute;
+            top: 0;
+            bottom:100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--main-color);
+            height:0;
+            transition: .5s;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .card:hover .mask{
+            bottom: 0;
+            height: 100%;
+        }
+        .mask .readbtn:hover{
+            color:#000;
+            background-color: #fff;
+        }
+        .text-wrapper ::selection{
+            background-color: #fff;
+            color: #000000;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="#" class="progression"><span></span></a>
+        <header class="header">
+            <div class="top-header">
+                <div class="topheader-content-width-control">
+                    <h1 class="logo"><img src="./img/pinterest_board_photo.png" alt="">front end</h1>
+                    <ul class="menu-desktop">
+                        <li><a href="./index.html">首頁</a></li>
+                        <!-- <li><a href="./about.html">關於我</a></li> -->
+                        <li><a href="./notecat.html">文章分類</a></li>
+                        <li><a href="./projectList.html">作品集</a></li>
+                        <li><a href="./history.html">歷史紀錄</a></li>
+                    </ul>
+                    <div class="menuicon active mobile" id="menuicon">
+                        <div id="bar1" class="bar1"></div>
+                        <div id="bar2" class="bar2"></div>
+                        <div id="bar3" class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="./index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <!-- <li><a href="./about.html"><i class="fas fa-user"></i> 關於我</a></li> -->
+                <li><a href="./notecat.html"><i class="fas fa-project-diagram"></i> 文章分類</a></li>
+                <li><a href="./projectList.html"><i class="fas fa-briefcase"></i> 作品集</a></li>
+                <li><a href="./history.html"><i class="fas fa-pen"></i> 歷史紀錄</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="cardList">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="front top-img"><img src="./img/top-img-1.png" alt=""></div>
+                        <div class="back text">
+                            <div class="text-wrapper">
+                                <div class="card-title">泅室設計稿</div>
+                                <div class="card-content">
+                                    <div class="card-content-wrapper">
+                                        <p class="work-date">日期：</p>
+                                        <p class="work-date">技能：</p>
+                                        <p class="work-descript">摘要：</p>
+                                    </div>
+                                    <button class="readbtn">詳細資訊</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mask mobile">
+                        <div class="text-wrapper">
+                            <div class="card-title">泅室設計稿</div>
+                            <div class="card-content">
+                                <div class="card-content-wrapper">
+                                    <p class="work-date">日期：</p>
+                                    <p class="work-date">技能：</p>
+                                    <p class="work-descript">摘要：</p>
+                                </div>
+                                <button class="readbtn">詳細資訊</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="front top-img"><img src="./img/top-img-1.png" alt=""></div>
+                        <div class="back text">
+                            <div class="text-wrapper">
+                                <div class="card-title">泅室設計稿</div>
+                                <div class="card-content">
+                                    <div class="card-content-wrapper">
+                                        <p class="work-date">日期：</p>
+                                        <p class="work-date">技能：</p>
+                                        <p class="work-descript">摘要：</p>
+                                    </div>
+                                    <button class="readbtn">詳細資訊</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mask mobile">
+                        <div class="text-wrapper">
+                            <div class="card-title">泅室設計稿</div>
+                            <div class="card-content">
+                                <div class="card-content-wrapper">
+                                    <p class="work-date">日期：</p>
+                                    <p class="work-date">技能：</p>
+                                    <p class="work-descript">摘要：</p>
+                                </div>
+                                <button class="readbtn">詳細資訊</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="front top-img"><img src="./img/top-img-1.png" alt=""></div>
+                        <div class="back text">
+                            <div class="text-wrapper">
+                                <div class="card-title">泅室設計稿</div>
+                                <div class="card-content">
+                                    <div class="card-content-wrapper">
+                                        <p class="work-date">日期：</p>
+                                        <p class="work-date">技能：</p>
+                                        <p class="work-descript">摘要：</p>
+                                    </div>
+                                    <button class="readbtn">詳細資訊</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mask mobile">
+                        <div class="text-wrapper">
+                            <div class="card-title">泅室設計稿</div>
+                            <div class="card-content">
+                                <div class="card-content-wrapper">
+                                    <p class="work-date">日期：</p>
+                                    <p class="work-date">技能：</p>
+                                    <p class="work-descript">摘要：</p>
+                                </div>
+                                <button class="readbtn">詳細資訊</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <span>&copy; 2020&nbsp;&nbsp;<i class="fas fa-user">&nbsp;&nbsp;Made by alicepai</i></span>            
+        </footer>
+    </div>
+    <script src="./js/all.js"></script>
+</body>
+</html>
