@@ -19,7 +19,7 @@
         }
         .card{
             box-sizing: border-box;
-            width: 32.3333%;
+            width: 25%;
             height: 300px;
             overflow: hidden;
             margin-right: 3px;
@@ -51,7 +51,7 @@
         .card-content{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             height: 270px;
         }
         .card-content p{
@@ -63,21 +63,27 @@
             color:#ffffff;
             border-color: #fff;
             transition: .2s;
+            text-align: center;
+            text-decoration: none;
         }
         .back{
             transform: rotateY(180deg);
             background-color: #818181;
             color: #ffffff;
-
         }
         .top-img{
             width: 100%;
             height: 100%;
         }
         .top-img img{
-            width: 190%;
+            width: 100%;
             height: 100%;
-            object-fit: cover;
+            /* object-fit: cover; */
+        }
+        .blogr{
+            width: 100%;
+            height: 100%;
+
         }
         .card:hover .card-wrapper{
             transform: rotateY(180deg);
@@ -98,6 +104,14 @@
             .top-img{
                 width: 250px;
                 height: 100%;
+            }
+            .top-img img{
+                width:190%;
+                height:100%;
+            }
+            .readbtn{
+                height:auto;    
+                text-align: center;
             }
             .card:hover .card-wrapper{
                 transform: rotate(0);
@@ -165,17 +179,16 @@
             <div class="cardList">
                 <div class="card">
                     <div class="card-wrapper">
-                        <div class="front top-img"><img src="./img/top-img-1.png" alt=""></div>
+                        <div class="front top-img swimmer"><img src="./img/top-img-1.png" alt=""></div>
                         <div class="back text">
                             <div class="text-wrapper">
                                 <div class="card-title">泅室設計稿</div>
                                 <div class="card-content">
                                     <div class="card-content-wrapper">
-                                        <p class="work-date">日期：</p>
-                                        <p class="work-date">技能：</p>
-                                        <p class="work-descript">摘要：</p>
+                                        <p class="work-date">日期：2020-03-24</p>
+                                        <p class="work-date">技能：Adobe Illustrator, Photoshop</p>
+                                        <p class="work-descript">摘要：為畫家友人設計的網站設計稿。</p>
                                     </div>
-                                    <button class="readbtn">詳細資訊</button>
                                 </div>
                             </div>
                         </div>
@@ -185,73 +198,73 @@
                             <div class="card-title">泅室設計稿</div>
                             <div class="card-content">
                                 <div class="card-content-wrapper">
-                                    <p class="work-date">日期：</p>
-                                    <p class="work-date">技能：</p>
-                                    <p class="work-descript">摘要：</p>
+                                    <p class="work-date">日期：2020-03-24</p>
+                                    <p class="work-date">技能：Adobe Illustrator, Photoshop</p>
+                                    <p class="work-descript">摘要：為畫家友人設計的網站設計稿。</p>
                                 </div>
-                                <button class="readbtn">詳細資訊</button>
+                                <!-- <button class="readbtn">詳細資訊</button> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-wrapper">
-                        <div class="front top-img"><img src="./img/top-img-1.png" alt=""></div>
+                        <div class="front top-img blogr"><img src="./img/blogr-landing-page.png" alt=""></div>
                         <div class="back text">
                             <div class="text-wrapper">
-                                <div class="card-title">泅室設計稿</div>
+                                <div class="card-title">Frontend Mentor Challenge<br />Blogr landing page</div>
                                 <div class="card-content">
                                     <div class="card-content-wrapper">
-                                        <p class="work-date">日期：</p>
-                                        <p class="work-date">技能：</p>
-                                        <p class="work-descript">摘要：</p>
+                                        <p class="work-date">日期：2021-4-28</p>
+                                        <p class="work-date">技能：HTML,CSS,RWD</p>
+                                        <p class="work-descript">摘要：費時5小時完成手機版和網頁版。</p>
                                     </div>
-                                    <button class="readbtn">詳細資訊</button>
+                                    <a class="readbtn" href="./projectpages/blogr-landing-page-main/index.html">詳細資訊</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="mask mobile">
                         <div class="text-wrapper">
-                            <div class="card-title">泅室設計稿</div>
+                            <div class="card-title">Frontend Mentor Challenge<br />Blogr landing page</div>
                             <div class="card-content">
                                 <div class="card-content-wrapper">
-                                    <p class="work-date">日期：</p>
-                                    <p class="work-date">技能：</p>
-                                    <p class="work-descript">摘要：</p>
+                                    <p class="work-date">日期：2021-4-28</p>
+                                    <p class="work-date">技能：HTML,CSS,RWD</p>
+                                    <p class="work-descript">摘要：費時5小時完成手機版和網頁版。</p>
                                 </div>
-                                <button class="readbtn">詳細資訊</button>
+                                <a class="readbtn" href="./projectpages/blogr-landing-page-main/index.html">詳細資訊</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-wrapper">
-                        <div class="front top-img"><img src="./img/top-img-1.png" alt=""></div>
+                        <div class="front top-img"><img src="./projectpages/single-price-grid-component-master/design/desktop-preview.jpg" alt=""></div>
                         <div class="back text">
                             <div class="text-wrapper">
-                                <div class="card-title">泅室設計稿</div>
+                                <div class="card-title">Frontend Mentor Challenge<br/>Single Price Grid Component</div>
                                 <div class="card-content">
                                     <div class="card-content-wrapper">
-                                        <p class="work-date">日期：</p>
-                                        <p class="work-date">技能：</p>
-                                        <p class="work-descript">摘要：</p>
+                                        <p class="work-date">日期：2021-04-28</p>
+                                        <p class="work-date">技能：HTML,CSS GRID,CSS FLEX, RWD</p>
+                                        <p class="work-descript">摘要：上Youtube學習CSS grid，並嘗試排版出卡片樣式。</p>
                                     </div>
-                                    <button class="readbtn">詳細資訊</button>
+                                    <a class="readbtn" href="./projectpages/single-price-grid-component-master/index.html">詳細資訊</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="mask mobile">
                         <div class="text-wrapper">
-                            <div class="card-title">泅室設計稿</div>
+                            <div class="card-title">Frontend Mentor Challenge<br/>Single Price Grid Component</div>
                             <div class="card-content">
                                 <div class="card-content-wrapper">
-                                    <p class="work-date">日期：</p>
-                                    <p class="work-date">技能：</p>
-                                    <p class="work-descript">摘要：</p>
+                                    <p class="work-date">日期：2021-04-28</p>
+                                    <p class="work-date">技能：HTML,CSS GRID,CSS FLEX, RWD</p>
+                                    <p class="work-descript">摘要：上Youtube學習CSS grid，並嘗試排版出卡片樣式。</p>
                                 </div>
-                                <button class="readbtn">詳細資訊</button>
+                                <a class="readbtn" href="./projectpages/single-price-grid-component-master/index.html">詳細資訊</a>
                             </div>
                         </div>
                     </div>
