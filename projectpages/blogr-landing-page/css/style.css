@@ -23,9 +23,99 @@ body{
 .header{
   background-color: #ff555d;
   background-position: center;
-  height:90vh;
+  min-height:100vh;
   border-radius: 0 0 0 150px;
-  overflow: hidden;
+  padding:2rem;
+  /* overflow: hidden; */
+}
+
+.mobileIcon{
+  cursor: pointer;
+}
+.hamIcon{
+  position: absolute;
+  top:1rem;
+  right:5%;
+}
+.closeIcon{
+  position: absolute;
+  top:.5rem;
+  right: 5.5%;
+  display: none;
+}
+.mobilenav {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: .5rem;
+  display:none;
+  position: relative;
+  z-index:99999999;
+  text-align: center;
+  width:95%;
+  /* min-height:80vh; */
+  margin: 5rem auto;
+  overflow: auto;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.1),-3px -3px 3px rgba(0,0,0,.1);
+  padding-bottom:1.5rem;
+} 
+.actived{
+  display:block;
+  top:0
+}
+.acc{
+  color: #000;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  padding:1.5rem; 
+  font-size: 2rem;
+  display:block;
+  margin: 0 auto;
+  cursor: pointer;
+  width:100%;
+}
+.show{
+  font-weight: 700;
+}
+.panel{
+  border-radius: 5px;
+  background-color: #ccc;
+  width:60%;
+  margin: 0 auto;
+  overflow:hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 1.5rem;
+}
+.panel a{
+  display:block;
+  text-decoration: none;
+  padding:1rem;
+  margin-left: .5rem;
+  color: #000;
+}
+.mobilenav a{
+  display: block;
+  text-decoration: none;
+  padding:1.5rem; 
+  font-size: 2rem;
+  color: #000;
+}
+.mobilenav a.login{
+  border-top: 1px solid #ccc;
+  width:90%;
+  margin: 0 auto;
+}
+.mobilenav .btn{
+  padding:1.5rem 2rem;
+  width:40%;
+  margin: 0 auto;
+  color:#fff;
+}
+.danger{
+  background: linear-gradient(to left,orange,#ff555d);
 }
 .header .intro{
   position: absolute;
@@ -36,13 +126,10 @@ body{
   left: -800px;
 }
 .header-wrapper{
-  padding-top: 5rem;
-  position: absolute;
-  top:0;
-  left:10%;
+  position: relative;
   z-index:999;
   display:flex;
-  width:80%;
+  width:95%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
