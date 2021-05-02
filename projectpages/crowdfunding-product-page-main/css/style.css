@@ -93,6 +93,7 @@ body{
       /* display: none; */
       width:15px;
       height:15px;
+      cursor: pointer;
   }
   /* mobile nav */
   .mobile-nav{
@@ -299,6 +300,7 @@ body{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
   }
   .close:hover,
   .close:focus {
