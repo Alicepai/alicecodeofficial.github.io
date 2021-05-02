@@ -100,18 +100,20 @@ const mobileIcon = document.querySelector(".openIcon");
 const closeIcon = document.getElementById("closeIcon");
 const mobilenav = document.querySelector("#modal03");
 const logo = document.getElementById("logo");
-
+const desktopLogo = document.getElementById("desktop-logo");
 mobileIcon.addEventListener("click",()=>{
     mobilenav.style.display = "block";
     mobileIcon.style.display = "none";
     closeIcon.style.display = "block";
-    logo.style.display = "block"
+    logo.style.display = "block";
+    desktopLogo.style.display = "none";
 })
 closeIcon.onclick = ()=>{
     mobilenav.style.display = "none";
     mobileIcon.style.display = "block";
     closeIcon.style.display = "none";
-    logo.style.display = "none"
+    logo.style.display = "none";
+    desktopLogo.style.display = "block";
 }
 
 
