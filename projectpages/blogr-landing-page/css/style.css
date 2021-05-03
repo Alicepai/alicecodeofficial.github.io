@@ -24,7 +24,7 @@ body{
   background: #ff555d;
   background-image: url('../images/bg-pattern-intro.svg');
   background-position: center;
-  min-height:100vh;
+  min-height:80vh;
   border-radius: 0 0 0 150px;
   padding:2rem;
   /* overflow: hidden; */
@@ -240,6 +240,10 @@ margin-right: 2rem;
 background-color: transparent;
 color: #fff;
 border: 1px solid #fff;
+}
+.content .btn:last-child:hover{
+  background-color: #fff;
+  color: #ff555d;
 }
 .main{
 position: relative;
