@@ -21,7 +21,8 @@ body{
   flex-direction: column;
 }
 .header{
-  background-color: #ff555d;
+  background: #ff555d;
+  background-image: url('../images/bg-pattern-intro.svg');
   background-position: center;
   min-height:100vh;
   border-radius: 0 0 0 150px;
