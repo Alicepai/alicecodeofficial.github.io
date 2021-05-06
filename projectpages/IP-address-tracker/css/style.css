@@ -7,6 +7,10 @@
     width:100%;
     min-height:100vh;
   }
+  html,body{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
   .upper-bg{
     background-image: url(../images/pattern-bg.png);
     min-height:20rem;
@@ -25,7 +29,7 @@
   }
   .input-wrapper input{
     width: 30rem;
-    height: 3rem;
+    height: .7rem;
     outline: 0;
     padding:1rem; 
   }
@@ -42,6 +46,7 @@
     color: #fff;
   }
   .card{
+    width: 90%;
     position: absolute;
     z-index:999;
     top: 20rem;
