@@ -51,9 +51,18 @@ const data = [
         title:'Frontend Mentor Challenge<br/>IP tracker project',
         date:'2021-05-05',
         skill:'HTML,CSS,JS, API,RWD',
-        descripton:'建制網頁版和手機版，串接api',
+        descripton:'建置網頁版和手機版，串接api',
         link:'./projectpages/IP-address-tracker/index.html'
-    }
+    },
+    {
+        id:7,
+        imgUrl:'./projectpages/stats-preview-card-component-main/design/desktop-preview.jpg',
+        title:'Frontend Mentor Challenge<br/>Stats preview card',
+        date:'2021-05-06',
+        skill:'HTML,CSS,RWD',
+        descripton:'費時2小時，完成手機版加網頁版',
+        link:'./projectpages/stats-preview-card-component-main/index.html'
+    },
 ]
 
 
