@@ -43,7 +43,6 @@ body{
 
 }
 .content-wrap{
-    /* border: 1px solid #fff; */
     min-height:30rem;
 }
 .content-wrap span{
@@ -53,7 +52,6 @@ body{
     line-height: 2;
 }
 .counter-wrapper{
-    /* border: 1px solid red; */
     width:90%;
     display: flex;
     align-items: center;
@@ -62,7 +60,6 @@ body{
     min-height: 10rem;
 }
 .counter{
-    /* border: 1px solid green; */
     font-family: 'Lexend Deca', sans-serif;
 
 }
@@ -81,6 +78,7 @@ small{
 .card-right-wrapper{
     width:50%;
     height:auto;
+    background-color: var(--softViolet);
     background:url(../images/image-header-desktop.jpg);
     position: relative;
 }
