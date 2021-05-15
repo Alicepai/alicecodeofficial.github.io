@@ -63,6 +63,15 @@ const data = [
         descripton:'費時2小時，完成手機版加網頁版',
         link:'./projectpages/stats-preview-card-component-main/index.html'
     },
+    {
+        id:8,
+        imgUrl:'./projectpages/todo-app-main/design/desktop-preview.jpg',
+        title:'Frontend Mentor Challenge<br/>Todo app',
+        date:'2021-05-12',
+        skill:'HTML,CSS,RWD',
+        descripton:'費時4天，完成手機版加網頁版。功能包括增刪改查，支援行內編輯和拖移項目，播放音樂及背景主題更換',
+        link:'./projectpages/todo-app-main/index.html'
+    },
 ]
 
 
